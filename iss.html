@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta http-equiv="refresh" content="5">
+   <h2>Current location of the ISS:</h2>
+      <script src = "http://maps.googleapis.com/maps/api/js"></script>
+      <script>
+         function loadMap() {		
+            var mapOptions = {
+               center:new google.maps.LatLng(-30.53621849599625, 72.53343294757136),
+               zoom:3
+            }
+            var map = new google.maps.Map(document.getElementById("sample"),mapOptions);
+            var marker = new google.maps.Marker({
+               position: new google.maps.LatLng(-30.53621849599625, 72.53343294757136),
+               map: map,
+            });
+         }
+      </script>
+   </head>
+   <body onload = "loadMap()">
+      <div id = "sample" style = "width:580px; height:400px;"></div>
+   </body>
+</html>
