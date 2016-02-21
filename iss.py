@@ -12,7 +12,7 @@ from datetime import datetime
 
 i = 0
 
-path = "/Users/maximillianthauer/Desktop/iss.html"
+path = "/path/to/your/file/iss.html"
 
 peopleUrl = requests.get("http://api.open-notify.org/astros.json")
 locationUrl = requests.get("http://api.open-notify.org/iss-now.json")
